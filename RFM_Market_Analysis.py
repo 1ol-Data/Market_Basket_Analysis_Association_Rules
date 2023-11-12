@@ -1,5 +1,9 @@
 ########## Load Library  ########
 
+# pip install apriori
+# pip install mlxtend
+# pip install xlrd
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -7,9 +11,6 @@ import warnings
 from sklearn.exceptions import ConvergenceWarning
 import matplotlib.pyplot as plt
 import datetime as dt
-
-# pip install apriori
-# pip install mlxtend
 
 import xlrd
 import re
@@ -87,8 +88,8 @@ Check_df(df)
 def grab_col_names(dataframe, cat_th=5, car_th=20):
     """
 
-    Veri setindeki kategorik, numerik ve kategorik fakat kardinal değişkenlerin isimlerini verir.
-    Not: Kategorik değişkenlerin içerisine numerik görünümlü kategorik değişkenler de dahildir.
+    The names of the categorical, numerical, and categorical but cardinal variables in the dataset.
+    Note: Categorical variables include numerically formatted categorical variables as well.
 
     Parameters
     ------
